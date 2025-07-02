@@ -1,8 +1,7 @@
-// Display current year
-const yearSpan = document.getElementById("currentyear");
-const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
+document.addEventListener("DOMContentLoaded", () => {
+  const currentYear = new Date().getFullYear();
+  document.getElementById("currentyear").textContent = currentYear;
 
-// Display last modified date
-const lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
+  const lastModified = document.lastModified;
+  document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
+});
