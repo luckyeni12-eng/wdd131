@@ -1,0 +1,103 @@
+/* Base styles - Mobile first */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #fefefe;
+  color: #333;
+}
+
+header {
+  background: #005b96;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+#menuButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+main {
+  padding: 1rem;
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+  align-items: stretch;
+}
+
+figure {
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #f1f1f1;
+}
+
+footer {
+  background: #003f63;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
