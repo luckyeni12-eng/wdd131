@@ -1,74 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Explore beautiful temples around the world with stunning photos of historic and modern temples from various countries." />
-  <meta name="author" content="Lucky Ayei Inyang Eni" />
-  <title>Temple Album - Beautiful Temples Around the World</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/temples.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="scripts/temples.js"></script>
 </head>
 <body>
   <header>
     <h1>Temple Album</h1>
-    <nav id="navMenu">
+    <button id="menu" aria-label="Toggle Menu">☰</button>
+    <nav class="navigation">
       <a href="#">Home</a>
       <a href="#">Old</a>
       <a href="#">New</a>
       <a href="#">Large</a>
       <a href="#">Small</a>
-      <span class="caption">by side by side with home, old, new, large, small</span>
     </nav>
   </header>
 
   <main>
-    <h2>Beautiful Temples Around the World</h2>
-    <div class="gallery">
-      <figure class="small">
+    <h2>Temples Around the World</h2>
+    <div class="grid-container">
+
+      <figure>
         <img src="https://www.churchofjesuschrist.org/imgs/xbrnlkgvoumomut7itk86rrpepzrej7pax1mvuzz/full/640%2C/0/default" alt="Nairobi Kenya Temple">
         <figcaption>Nairobi, Kenya Temple</figcaption>
       </figure>
-      <figure class="small">
+
+      <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Temple_mormon_de_Paris_au_Chesnay_le_9_avril_2017_-_20.jpg/250px-Temple_mormon_de_Paris_au_Chesnay_le_9_avril_2017_-_20.jpg" alt="Paris France Temple">
         <figcaption>Paris, France Temple</figcaption>
       </figure>
-      <figure class="medium">
+
+      <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/11172022TaylorsvilleUtahTempleDroneDay-01.jpg/250px-11172022TaylorsvilleUtahTempleDroneDay-01.jpg" alt="Taylorsville Utah Temple">
         <figcaption>Taylorsville, Utah Temple</figcaption>
       </figure>
-      <figure class="medium">
+
+      <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ghana_Mission_247.jpg/250px-Ghana_Mission_247.jpg" alt="Accra Ghana Temple">
         <figcaption>Accra, Ghana Temple</figcaption>
       </figure>
-      <figure class="medium">
+
+      <figure>
         <img src="https://www.churchofjesuschrist.org/imgs/26997a0eac228b51de04df861686ccc0cb3bbf92/full/640%2C/0/default" alt="Birmingham Alabama Temple">
         <figcaption>Birmingham, Alabama Temple</figcaption>
       </figure>
-      <figure class="large">
+
+      <figure>
         <img src="https://www.churchofjesuschrist.org/imgs/92c33bcbf9cf85483e008d6871f8ced5f6d7b661/full/640%2C/0/default" alt="Salt Lake Temple">
         <figcaption>Salt Lake Temple</figcaption>
       </figure>
-      <figure class="large">
+
+      <figure>
         <img src="https://churchofjesuschrist.org/imgs/9c4531bb1adc11ecbd09eeeeac1ec23d4f6a8a8a/full/640%2C/0/default" alt="Burley Idaho Temple">
         <figcaption>Burley, Idaho Temple</figcaption>
       </figure>
-      <figure class="large">
+
+      <figure>
         <img src="https://churchofjesuschrist.org/imgs/9cc254eeb3b411edb462eeeeac1e8b71c425eaeb/full/640%2C/0/default" alt="Singapore Temple">
         <figcaption>Singapore Temple</figcaption>
       </figure>
-      <figure class="large">
+
+      <figure>
         <img src="https://churchofjesuschrist.org/imgs/35152aa82a8f11ec8410eeeeac1e04a24c1edfef/full/640%2C/0/default" alt="Bacolod Philippines Temple">
         <figcaption>Bacolod, Philippines Temple</figcaption>
       </figure>
+
     </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="year">2025</span> Lucky Ayei Inyang Eni Nigeria</p>
-    <p>Last modification: <span id="lastModified">07/08/2025</span></p>
+    <p>&copy; 2025 | Lucky Ayei Inyang Eni | Nigeria</p>
+    <p>Last Modification: 07/09/2025 13:11:08</p>
   </footer>
-
-  <script src="scripts/temples.js" defer></script>
 </body>
 </html>
