@@ -1,14 +1,155 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Temple Album</title>
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <script defer src="scripts/temples.js"></script>
+
+  <style>
+    /* Centralize header, main, footer */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      justify-content: flex-start;
+      background: #f9f9f9;
+    }
+
+    header {
+      width: 100%;
+      background-color: #2d3a4e; /* Dark blue */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid #f4b400; /* Gold border for emphasis */
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #f4b400; /* Gold color for the header title */
+    }
+
+    header button {
+      background-color: #f4b400; /* Gold background */
+      color: #2d3a4e; /* Dark blue text */
+      border: none;
+      font-size: 1.5rem;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    header button:hover {
+      background-color: #ffd700; /* Light gold on hover */
+    }
+
+    nav.navigation a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav.navigation a:hover {
+      color: #ffd700; /* Gold on hover */
+    }
+
+    main {
+      width: 90%;
+      max-width: 900px; /* constrain max width */
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    main h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Grid container with 3 columns and 3 rows */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 20px;
+      justify-items: center;
+    }
+
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #444;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    footer p:first-child {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #f4b400; /* Goldish color for emphasis */
+    }
+
+    footer p:hover {
+      color: #f4b400; /* Highlight text on hover */
+      cursor: pointer;
+    }
+
+    /* Footer Links (if you add any) */
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      color: #f4b400;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,52 +167,77 @@
   <main>
     <h2>Temples Around the World</h2>
     <div class="grid-container">
-
       <figure>
-        <img src="https://www.churchofjesuschrist.org/imgs/xbrnlkgvoumomut7itk86rrpepzrej7pax1mvuzz/full/640%2C/0/default" alt="Nairobi Kenya Temple">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/xbrnlkgvoumomut7itk86rrpepzrej7pax1mvuzz/full/640%2C/0/default"
+          alt="Nairobi Kenya Temple"
+        />
         <figcaption>Nairobi, Kenya Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Temple_mormon_de_Paris_au_Chesnay_le_9_avril_2017_-_20.jpg/250px-Temple_mormon_de_Paris_au_Chesnay_le_9_avril_2017_-_20.jpg" alt="Paris France Temple">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Temple_mormon_de_Paris_au_Chesnay_le_9_avril_2017_-_20.jpg/250px-Temple_mormon_de_Paris_au_Chesnay_le_9_avril_2017_-_20.jpg"
+          alt="Paris France Temple"
+        />
         <figcaption>Paris, France Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/11172022TaylorsvilleUtahTempleDroneDay-01.jpg/250px-11172022TaylorsvilleUtahTempleDroneDay-01.jpg" alt="Taylorsville Utah Temple">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/11172022TaylorsvilleUtahTempleDroneDay-01.jpg/250px-11172022TaylorsvilleUtahTempleDroneDay-01.jpg"
+          alt="Taylorsville Utah Temple"
+        />
         <figcaption>Taylorsville, Utah Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ghana_Mission_247.jpg/250px-Ghana_Mission_247.jpg" alt="Accra Ghana Temple">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ghana_Mission_247.jpg/250px-Ghana_Mission_247.jpg"
+          alt="Accra Ghana Temple"
+        />
         <figcaption>Accra, Ghana Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://www.churchofjesuschrist.org/imgs/26997a0eac228b51de04df861686ccc0cb3bbf92/full/640%2C/0/default" alt="Birmingham Alabama Temple">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/26997a0eac228b51de04df861686ccc0cb3bbf92/full/640%2C/0/default"
+          alt="Birmingham Alabama Temple"
+        />
         <figcaption>Birmingham, Alabama Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://www.churchofjesuschrist.org/imgs/92c33bcbf9cf85483e008d6871f8ced5f6d7b661/full/640%2C/0/default" alt="Salt Lake Temple">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/92c33bcbf9cf85483e008d6871f8ced5f6d7b661/full/640%2C/0/default"
+          alt="Salt Lake Temple"
+        />
         <figcaption>Salt Lake Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://churchofjesuschrist.org/imgs/9c4531bb1adc11ecbd09eeeeac1ec23d4f6a8a8a/full/640%2C/0/default" alt="Burley Idaho Temple">
+        <img
+          src="https://churchofjesuschrist.org/imgs/9c4531bb1adc11ecbd09eeeeac1ec23d4f6a8a8a/full/640%2C/0/default"
+          alt="Burley Idaho Temple"
+        />
         <figcaption>Burley, Idaho Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://churchofjesuschrist.org/imgs/9cc254eeb3b411edb462eeeeac1e8b71c425eaeb/full/640%2C/0/default" alt="Singapore Temple">
+        <img
+          src="https://churchofjesuschrist.org/imgs/9cc254eeb3b411edb462eeeeac1e8b71c425eaeb/full/640%2C/0/default"
+          alt="Singapore Temple"
+        />
         <figcaption>Singapore Temple</figcaption>
       </figure>
 
       <figure>
-        <img src="https://churchofjesuschrist.org/imgs/35152aa82a8f11ec8410eeeeac1e04a24c1edfef/full/640%2C/0/default" alt="Bacolod Philippines Temple">
+        <img
+          src="https://churchofjesuschrist.org/imgs/35152aa82a8f11ec8410eeeeac1e04a24c1edfef/full/640%2C/0/default"
+          alt="Bacolod Philippines Temple"
+        />
         <figcaption>Bacolod, Philippines Temple</figcaption>
       </figure>
-
     </div>
   </main>
 

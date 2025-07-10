@@ -77,3 +77,27 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #004080;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  main {
+    max-width: 900px;
+  }
+
+  .grid-container {
+    display: grid; /* Ensure grid is enabled */
+    grid-template-columns: repeat(3, 1fr); /* Updated for 3 columns */
+    grid-template-rows: repeat(3, auto); /* Updated for 3 rows */
+  }
+}
