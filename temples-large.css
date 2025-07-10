@@ -16,6 +16,7 @@
   }
 
   .grid-container {
+    display: grid; /* Ensure grid is enabled */
     grid-template-columns: repeat(3, 1fr);
   }
 }
