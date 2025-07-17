@@ -1,7 +1,7 @@
 :root {
   --primary-color: #008751;
   --secondary-color: #fcdc4d;
-  --font-main: Arial, sans-serif;
+  --font-main: 'Roboto', Arial, sans-serif;
   --max-width: 1024px;
   --text-color: #333;
   --bg-contrast: #fff;
@@ -80,7 +80,6 @@ section {
   display: none;
 }
 
-/* Footer */
 footer {
   background: var(--primary-color);
   color: white;

@@ -1,4 +1,3 @@
-// One-liner wind chill calculator
 function calculateWindChill(t, s) {
   return 13.12 + 0.6215 * t - 11.37 * Math.pow(s, 0.16) + 0.3965 * t * Math.pow(s, 0.16);
 }
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const s = 15; // in km/h
   const windChillEl = document.getElementById("windchill");
 
-  // Only calculate if valid
   if (t <= 10 && s > 4.8) {
     windChillEl.textContent = calculateWindChill(t, s).toFixed(1) + "°C";
   } else {
