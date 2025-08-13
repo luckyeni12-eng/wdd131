@@ -6,13 +6,16 @@ const products = [
   { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
+// When the DOM is fully loaded, populate the Product Name select element
 window.addEventListener("DOMContentLoaded", () => {
   const select = document.getElementById("product");
 
+  // Use the products array to populate the select structure with options
+  // Each option uses the product's id as the value and the name as the display text
   products.forEach(product => {
     const option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
+    option.value = product.id;          // value is product ID
+    option.textContent = product.name;  // visible name in the dropdown
     select.appendChild(option);
   });
 });
