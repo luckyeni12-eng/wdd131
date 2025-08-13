@@ -88,4 +88,4 @@ button {
   .services-list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} /* ✅ This closing brace was missing */
