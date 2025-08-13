@@ -3,34 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Filtered Temple Album</title>
-  <link rel="stylesheet" href="styles/filtered-temples.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <script defer src="scripts/filtered-temples.js"></script>
+  <meta name="description" content="Filtered list of LDS Temples with dynamic filtering by age, size, and more." />
+  <meta name="author" content="Your Name" />
+  <title>Filtered LDS Temples</title>
+  <link rel="stylesheet" href="filtered-temples.css" />
 </head>
 <body>
   <header>
-    <h1>Temple Album</h1>
-    <nav class="navigation">
-      <a href="#" data-filter="all">Home</a>
-      <a href="#" data-filter="old">Old</a>
-      <a href="#" data-filter="new">New</a>
-      <a href="#" data-filter="large">Large</a>
-      <a href="#" data-filter="small">Small</a>
+    <h1>Church of Jesus Christ Temples</h1>
+    <nav class="navigation" aria-label="Temple filters">
+      <ul class="filters">
+        <li><button id="filter-home" class="filter-btn" aria-pressed="true">Home</button></li>
+        <li><button id="filter-old" class="filter-btn" aria-pressed="false">Old (Before 1900)</button></li>
+        <li><button id="filter-new" class="filter-btn" aria-pressed="false">New (After 2000)</button></li>
+        <li><button id="filter-large" class="filter-btn" aria-pressed="false">Large (&gt; 90,000 sq ft)</button></li>
+        <li><button id="filter-small" class="filter-btn" aria-pressed="false">Small (&lt; 10,000 sq ft)</button></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Temples Around the World</h2>
-    <div class="grid-container" id="templesContainer">
-      <!-- Temple cards will be dynamically inserted here -->
-    </div>
+    <section id="temples-container" class="grid-container" aria-live="polite" aria-label="List of temples">
+      <!-- Temple cards will be injected here -->
+    </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> | Lucky Ayei Inyang Eni | Nigeria</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
+    <p>&copy; <span id="copyright-year"></span> Lucky Ayei Inyang Eni.</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
   </footer>
+
+  <script src="filtered-temples.js" defer></script>
 </body>
 </html>
