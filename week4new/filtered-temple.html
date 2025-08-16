@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Filtered list of LDS Temples with dynamic filtering by age, size, and more.">
-  <meta name="author" content="Your Name">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Filtered list of LDS Temples with dynamic filtering by age, size, and more." />
+  <meta name="author" content="Your Name" />
   <title>Filtered LDS Temples</title>
-  <link rel="stylesheet" href="filtered-temples.css">
+  <link rel="stylesheet" href="filtered-temples.css" />
 </head>
 <body>
   <header>
     <h1>Church of Jesus Christ Temples</h1>
     <nav class="navigation" aria-label="Temple filters">
       <ul class="filters">
-        <li><button id="filter-home" class="filter-btn" aria-pressed="true">Home</button></li>
-        <li><button id="filter-old" class="filter-btn" aria-pressed="false">Old (Before 1900)</button></li>
-        <li><button id="filter-new" class="filter-btn" aria-pressed="false">New (After 2000)</button></li>
-        <li><button id="filter-large" class="filter-btn" aria-pressed="false">Large (&gt; 90,000 sq ft)</button></li>
-        <li><button id="filter-small" class="filter-btn" aria-pressed="false">Small (&lt; 10,000 sq ft)</button></li>
+        <li><button id="filter-home" class="filter-btn" aria-pressed="true" data-label="Home">Home</button></li>
+        <li><button id="filter-old" class="filter-btn" aria-pressed="false" data-label="Old">Old</button></li>
+        <li><button id="filter-new" class="filter-btn" aria-pressed="false" data-label="New">New</button></li>
+        <li><button id="filter-large" class="filter-btn" aria-pressed="false" data-label="Large">Large</button></li>
+        <li><button id="filter-small" class="filter-btn" aria-pressed="false" data-label="Small">Small</button></li>
       </ul>
     </nav>
   </header>

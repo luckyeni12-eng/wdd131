@@ -1,0 +1,116 @@
+/* Global CSS Variables */
+:root {
+  --primary-color: #008751; /* Nigerian green */
+  --secondary-color: #ffffff;
+  --accent-color: #00733a;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.hero picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Weather Section */
+.weather-section {
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  background-color: #f0f8f5;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.weather-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-right: 2rem;
+}
+
+/* Emoticon shown on desktop */
+.weather-section h2 .weather-icon-desktop::after {
+  content: "⛅";
+  font-size: 1.8rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--accent-color);
+}
+
+/* Hide emoticon on mobile */
+@media (max-width: 599px) {
+  .weather-section h2 .weather-icon-desktop::after {
+    content: "";
+  }
+}
+
+/* Weather info */
+.weather-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile SVG icon shown only on mobile */
+.weather-icon-mobile {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.weather-icon-mobile img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 599px) {
+  .weather-icon-mobile {
+    display: block;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+  padding: 1rem 0;
+}
